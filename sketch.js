@@ -140,6 +140,7 @@ function draw() {
 
     if (keyWentDown("r")) {
       console.log("reset")
+      mainCyclist.addAnimation("SahilRunning",mainRacerImg1)
       reset()
     }
 }
@@ -175,7 +176,6 @@ function redCyclists(){
 function reset() {
   gameState = PLAY
   gameOver.visible = false
-  mainCyclist.changeAnimation(mainRacerImg1)
   distance = 0
   redCG.destroyEach()
   yellowCG.destroyEach()
